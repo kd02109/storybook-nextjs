@@ -1,0 +1,17 @@
+{
+  "extends": ["next/core-web-vitals","plugin:prettier/recommended"],
+    "globals": {
+    "React": true,
+    "JSX": true
+  },
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "ignorePatterns": [
+    // Ignore dotfiles
+    ".*.js",
+    "node_modules/",
+    "dist/"
+  ]
+}
