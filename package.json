@@ -9,7 +9,8 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build --docs",
-    "storybook-docs": "storybook dev --docs"
+    "storybook-docs": "storybook dev --docs",
+    "chromatic": "npx chromatic --project-token=chpt_6bd9f63661a7a7f"
   },
   "dependencies": {
     "clsx": "^2.1.0",
@@ -33,6 +34,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "chromatic": "^11.3.0",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
     "eslint-config-prettier": "^9.1.0",
