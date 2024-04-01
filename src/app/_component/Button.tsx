@@ -9,13 +9,19 @@ type ButtonVariant = 'disabled' | 'active' | 'transparent';
 type Position = 'fixed' | 'relative';
 
 export interface ButtonProps extends HTMLMotionProps<'button'> {
+  /**버튼 컴포넌트 내부 텍스트 */
   children: ReactNode;
+  /** 버튼 활성화 여부 */
   variant?: ButtonVariant;
+  /** 버튼 위치*/
   position?: Position;
+  /** 버튼의 용도 */
   type?: 'button' | 'submit' | 'reset';
+  /** 그림자 여부 */
   isShadow?: boolean;
 }
 
+/** 버튼 컴포넌트에 대해서 소개합니다 */
 export default function Button({
   children,
   isShadow,
